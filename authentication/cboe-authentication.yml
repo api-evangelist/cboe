@@ -1,0 +1,41 @@
+generated: '2026-07-22'
+method: searched
+source: https://api.livevol.com/v1/docs/Home/Authentication
+docs: https://api.livevol.com/v1/docs/Home/Authentication
+description: >-
+  Authentication profile for the Cboe LiveVol All Access API. All API access is
+  OAuth 2.0 against the Cboe LiveVol IdentityServer at id.livevol.com, which
+  publishes a full OpenID Connect discovery document (saved at
+  well-known/cboe-openid-configuration.json). Machine-to-machine access uses
+  the client_credentials grant; browser-based applications use the
+  authorization_code flow. Access tokens are bearer tokens sent in the
+  Authorization header and expire after 3600 seconds; refresh tokens are
+  supported. The public Cboe Delayed Quotes JSON endpoints on cdn.cboe.com
+  require no authentication.
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [clientCredentials, authorizationCode, password, refreshToken, implicit]
+  token_style: Bearer access token in Authorization header
+  token_lifetime_seconds: 3600
+schemes:
+  - name: LiveVolOAuth2
+    type: oauth2
+    issuer: https://id.livevol.com
+    authorizationUrl: https://id.livevol.com/connect/authorize
+    tokenUrl: https://id.livevol.com/connect/token
+    revocationUrl: https://id.livevol.com/connect/revocation
+    userinfoUrl: https://id.livevol.com/connect/userinfo
+    jwksUrl: https://id.livevol.com/.well-known/jwks
+    grant_types_documented: [client_credentials, authorization_code, refresh_token]
+    grant_types_supported: [authorization_code, client_credentials, password, refresh_token, implicit]
+    client_auth: 'Basic <base64 encoded client_id:client_secret> on the token endpoint'
+    header: 'Authorization: Bearer <access_token>'
+    scopes_detail: scopes/cboe-scopes.yml
+    notes: >-
+      client_credentials is documented for machine-to-machine use;
+      authorization_code for browser-based applications. Token responses
+      include expires_in 3600 and optional refresh_token.
+  - name: None (public delayed quotes)
+    type: none
+    applies_to: https://cdn.cboe.com/api/global
+    notes: Public delayed-quote JSON endpoints are unauthenticated.

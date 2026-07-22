@@ -1,0 +1,31 @@
+generated: '2026-07-22'
+method: searched
+source: https://www.cboe.com/system-status/
+description: >-
+  Lifecycle profile for Cboe's public API surface. The LiveVol All Access API
+  is versioned in the URI path (current v1). Cboe publishes exchange system
+  status at cboe.com/system-status/ (Cboe Titanium System Status) plus
+  per-market system status notice feeds, and dated DataShop release notes.
+  No public API deprecation policy or Sunset/Deprecation header support was
+  found.
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: All LiveVol All Access endpoints are rooted at https://api.livevol.com/v1/
+status_page: https://www.cboe.com/system-status/
+status_notices:
+  - name: Cboe U.S. Equities Exchanges System Status Notices
+    url: https://www.cboe.com/us/equities/notices/
+  - name: Cboe Options Exchange System Status Notices
+    url: https://www.cboe.com/us/options/notices/
+  - name: Cboe U.S. Futures Exchange System Status Notices
+    url: https://www.cboe.com/us/futures/notices/
+  - name: Cboe U.S. Indices System Status Notices
+    url: https://www.cboe.com/us/indices/notices/
+release_notes: https://datashop.cboe.com/releasenotes
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No public deprecation policy found.
+sla: null
+deprecated_operations: []

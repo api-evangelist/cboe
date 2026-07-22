@@ -1,0 +1,49 @@
+generated: '2026-07-22'
+method: searched
+source: https://api.livevol.com/v1/docs/
+description: >-
+  Cross-cutting request/response conventions for the Cboe LiveVol All Access
+  API, captured from the published documentation (home page, Authentication,
+  and Response Codes references). The API is a read-only market-data surface
+  built on simple REST principles; there is no write surface, so no
+  idempotency-key mechanism is documented or needed.
+
+base_url: https://api.livevol.com/v1
+api_style: REST over HTTPS, JSON responses; predominantly GET endpoints with a few POST scan/analytics endpoints
+
+authentication:
+  scheme: OAuth 2.0 bearer tokens from id.livevol.com (client_credentials or authorization_code)
+  header: 'Authorization: Bearer <access_token>'
+  docs: https://api.livevol.com/v1/docs/Home/Authentication
+  detail: authentication/cboe-authentication.yml
+
+idempotency:
+  supported: false
+  notes: >-
+    No idempotency-key mechanism documented; the surface is read-only market
+    data (GET) plus stateless POST scan queries.
+
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: lifecycle/cboe-lifecycle.yml
+
+rate_limits:
+  signaling: HTTP 429 for both request-frequency limits and points-allowance exhaustion
+  metering: points per request against daily (trial) or monthly (tier) allowances
+  dashboard: API Statistics dashboard on Cboe DataShop (Tier 1-4)
+  detail: rate-limits/cboe-rate-limits.yml
+
+errors:
+  envelope: HTTP status code + error message string (no problem+json)
+  reference: https://api.livevol.com/v1/docs/Home/ResponseCodes
+  detail: errors/cboe-problem-types.yml
+  empty_result: 204 No Content when no data matches request parameters
+
+pagination:
+  style: not-documented
+  notes: No cross-cutting pagination convention is documented in the public reference.
+
+request_tracing:
+  header: null
+  notes: No request-id tracing header documented.

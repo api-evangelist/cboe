@@ -1,0 +1,71 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Cboe Global Markets
+providerId: cboe
+created: '2026-07-22'
+modified: '2026-07-22'
+generated: '2026-07-22'
+method: searched
+tags:
+  - Market Data
+  - Options
+  - Equities
+description: >-
+  Cboe sells the LiveVol All Access API through Cboe DataShop as points-based
+  subscription tiers. Each request consumes points against a daily (trial) or
+  monthly (paid) allowance; paid tiers add per-point overage. SIP subscriptions
+  (OPRA, CTA/UTP, CSMi) are optional add-ons required for certain live/delayed
+  professional-level market data. Tiers 1-2 are referenced in the API docs but
+  their pricing is not published on the public product page.
+sources:
+  - https://datashop.cboe.com/cboe-all-access-api
+plans:
+  - id: cboe-all-access-trial
+    name: All Access API — Free Trial
+    type: trial
+    description: 14-day free trial; credit card authorization required but not charged; no overage available.
+    entries:
+      - label: Points allowance
+        name: points_daily
+        type: metered
+        metric: points
+        limit: 500
+        timeFrame: day
+        price: $0/month
+  - id: cboe-all-access-tier-3
+    name: All Access API — Tier 3
+    type: subscription
+    entries:
+      - label: Points allowance
+        name: points_monthly
+        type: metered
+        metric: points
+        limit: 1250000
+        timeFrame: month
+        price: $2,499/month
+      - label: Overage
+        name: overage
+        type: metered
+        metric: point
+        limit: -1
+        timeFrame: usage
+        price: $0.004 per point
+  - id: cboe-all-access-tier-4
+    name: All Access API — Tier 4
+    type: subscription
+    entries:
+      - label: Points allowance
+        name: points_monthly
+        type: metered
+        metric: points
+        limit: 4000000
+        timeFrame: month
+        price: $4,599/month
+      - label: Overage
+        name: overage
+        type: metered
+        metric: point
+        limit: -1
+        timeFrame: usage
+        price: $0.0025 per point

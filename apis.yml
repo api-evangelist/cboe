@@ -1,13 +1,138 @@
 aid: cboe
 url: https://raw.githubusercontent.com/api-evangelist/cboe/refs/heads/main/apis.yml
-name: CBOE
+name: Cboe Global Markets
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-description: 'Fortune 1000 company CBOE. Public API documentation has not yet been catalogued in the API Evangelist network.'
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cboe.png
+description: 'Cboe Global Markets is one of the world''s largest exchange holding
+  companies, operating options, futures, equities, and FX markets including the
+  Cboe Options Exchange, home of the VIX Index and SPX options. Cboe offers market
+  data programmatically through the Cboe DataShop platform and the LiveVol All
+  Access API — a REST API suite covering real-time, delayed, and historical
+  options and equities quotes and trades, Greeks and implied volatility
+  analytics, earnings events, custom market scanners, and trade review —
+  secured with OAuth 2.0 via the LiveVol identity service, plus free public
+  delayed-quote JSON endpoints that back cboe.com quote pages.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-07-22'
 specificationVersion: '0.19'
+tags:
+  - Market Data
+  - Options
+  - Equities
+  - Derivatives
+  - Volatility
+  - Financial Markets
+  - Exchanges
+  - Trading
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
 common:
   - type: LinkedIn
     url: https://www.linkedin.com/company/cboe
-apis: []
+  - type: Website
+    url: https://www.cboe.com/
+  - type: DeveloperPortal
+    url: https://datashop.cboe.com/
+  - type: Documentation
+    url: https://api.livevol.com/v1/docs/
+  - type: APIReference
+    url: https://api.livevol.com/v1/docs/Help
+  - type: GettingStarted
+    url: https://api.livevol.com/v1/docs/Home/Authentication
+  - type: Pricing
+    url: https://datashop.cboe.com/cboe-all-access-api
+  - type: SignUp
+    url: https://datashop.cboe.com/register
+  - type: TermsOfService
+    url: https://datashop.cboe.com/data-policies
+  - type: PrivacyPolicy
+    url: https://www.cboe.com/privacy/
+  - type: Support
+    url: https://datashop.cboe.com/faqs
+  - type: Blog
+    url: https://www.cboe.com/insights/
+  - type: ChangeLog
+    url: https://datashop.cboe.com/releasenotes
+  - type: StatusPage
+    url: https://www.cboe.com/system-status/
+  - type: Authentication
+    url: authentication/cboe-authentication.yml
+  - type: OAuthScopes
+    url: scopes/cboe-scopes.yml
+  - type: WellKnown
+    url: well-known/cboe-well-known.yml
+  - type: Conformance
+    url: conformance/cboe-conformance.yml
+  - type: ErrorCatalog
+    url: errors/cboe-problem-types.yml
+  - type: Lifecycle
+    url: lifecycle/cboe-lifecycle.yml
+  - type: RateLimits
+    url: rate-limits/cboe-rate-limits.yml
+  - type: Plans
+    url: plans/cboe-plans-pricing.yml
+  - type: Conventions
+    url: conventions/cboe-conventions.yml
+  - type: Sandbox
+    url: sandbox/cboe-sandbox.yml
+  - type: LLMsTxt
+    url: llms/cboe-llms.txt
+  - type: MCPServer
+    url: mcp/cboe-mcp.yml
+  - type: DomainSecurity
+    url: security/cboe-domain-security.yml
+apis:
+  - aid: cboe:cboe-livevol-all-access-api
+    name: Cboe LiveVol All Access API
+    tags:
+      - Options
+      - Equities
+      - Market Data
+      - Volatility
+      - Analytics
+      - Scanners
+      - Earnings
+    humanURL: https://api.livevol.com/v1/docs/
+    baseURL: https://api.livevol.com/v1
+    description: The Cboe LiveVol All Access API is a REST API suite offering
+      quote and trade details for equities and options via live, delayed, and
+      historical endpoints. Endpoint groups cover Market at a Glance (option
+      trades, quotes, market notifications), Time and Sales (trades, quotes,
+      market depth, option trades with Greeks), Events (earnings data),
+      Analytics (trade review), Reference (symbols, expirations, exchanges,
+      currencies), and Scans and Alerts (custom scanners, trade optimizer).
+      Access is OAuth 2.0 via id.livevol.com with points-based usage tiers
+      sold through Cboe DataShop.
+    properties:
+      - type: Documentation
+        url: https://api.livevol.com/v1/docs/
+      - type: APIReference
+        url: https://api.livevol.com/v1/docs/Help
+      - type: Authentication
+        url: https://api.livevol.com/v1/docs/Home/Authentication
+      - type: Examples
+        url: https://api.livevol.com/v1/docs/Home/Examples
+      - type: ErrorCodes
+        url: https://api.livevol.com/v1/docs/Home/ResponseCodes
+      - type: Pricing
+        url: https://datashop.cboe.com/cboe-all-access-api
+  - aid: cboe:cboe-delayed-quotes-api
+    name: Cboe Delayed Quotes API
+    tags:
+      - Quotes
+      - Options
+      - Indices
+      - Market Data
+    humanURL: https://www.cboe.com/delayed_quotes/
+    baseURL: https://cdn.cboe.com/api/global
+    description: Public, unauthenticated JSON endpoints served from cdn.cboe.com
+      that back the delayed-quote pages on cboe.com. Provide delayed quotes and
+      full option chains for equities and Cboe indices (for example
+      /delayed_quotes/quotes/_SPX.json and /delayed_quotes/options/_SPX.json),
+      including price, volume, implied volatility, and Greeks fields. Not
+      formally documented as a supported product; captured here as an observed
+      public surface.
+    properties:
+      - type: Documentation
+        url: https://www.cboe.com/delayed_quotes/

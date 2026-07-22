@@ -1,0 +1,20 @@
+generated: '2026-07-22'
+method: searched
+source: https://datashop.cboe.com/releasenotes
+description: >-
+  Cboe publishes dated release notes for DataShop and the All Access API at
+  datashop.cboe.com/releasenotes, organized by year (2019-2023 sections at
+  capture time). The page is rendered client-side, so individual entries could
+  not be captured mechanically in this round; the live page is the source of
+  truth. The API itself is versioned in the URI path (v1) — see
+  lifecycle/cboe-lifecycle.yml.
+docs: https://datashop.cboe.com/releasenotes
+versioning:
+  scheme: dated release notes, grouped by year
+  api_version: v1
+  detail: lifecycle/cboe-lifecycle.yml
+years_covered: [2023, 2022, 2021, 2020, 2019]
+entries: []
+notes: >-
+  Entries not harvested — JS-rendered page; revisit with a headless fetch to
+  structure the recent window.

@@ -1,0 +1,47 @@
+generated: '2026-07-22'
+method: searched
+source: https://api.livevol.com/v1/docs/Home/ResponseCodes
+format: http-status
+description: >-
+  Error catalog for the Cboe LiveVol All Access API, captured from the
+  published Response Codes reference. Errors are plain HTTP status codes with a
+  human-readable error message (no RFC 9457 problem+json envelope). 429 is used
+  both for request-frequency rate limiting and for exhausting the monthly/daily
+  points allowance.
+problems:
+  - status: 200
+    title: OK
+    detail: Request successful.
+  - status: 204
+    title: No Content
+    detail: No data available for request parameters specified.
+  - status: 400
+    title: Invalid Format
+    detail: Request parameter contains invalid format or syntax error. Check the error message for details.
+  - status: 400
+    title: Missing Parameter
+    detail: Required request parameter is missing. Check the error message for details.
+  - status: 400
+    title: Insufficient Permissions
+    detail: Request requires a subscription to a licensed data provider. See the API documentation for details.
+  - status: 401
+    title: Authentication Failed
+    detail: Authentication failed. Ensure your credentials are correct.
+  - status: 404
+    title: Not Found
+    detail: Resource not found. Ensure the URI requested is valid.
+  - status: 429
+    title: Too Many Requests
+    detail: Request frequency exceeds the API's rate limits.
+    remediation: Slow request rate; see rate-limits/cboe-rate-limits.yml.
+  - status: 429
+    title: Requests Exceed Points Limit
+    detail: >-
+      Requests exceed monthly or daily points allowance. Tier 1-4 customers can
+      monitor usage in the API Statistics dashboard.
+    remediation: Upgrade tier or purchase overage; monitor the API Statistics dashboard.
+  - status: 500
+    title: Internal Server Error
+    detail: >-
+      Something went wrong on the server side. Usually temporary, for example
+      under high load or when an endpoint is temporarily having issues.

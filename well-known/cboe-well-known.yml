@@ -1,0 +1,57 @@
+generated: '2026-07-22'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Cboe hosts in
+  apis.yml (www.cboe.com, datashop.cboe.com, api.livevol.com, cdn.cboe.com) and
+  the LiveVol identity service (id.livevol.com). Status is the HTTP code
+  observed at fetch time. www.cboe.com and cdn.cboe.com answer 403 to
+  /.well-known/ paths (bot protection); the LiveVol identity host publishes a
+  real OpenID Connect discovery document and JWKS, both saved verbatim.
+hosts:
+  - host: https://id.livevol.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        type: application/json
+        file: cboe-openid-configuration.json
+      - path: /.well-known/jwks
+        status: 200
+        type: application/json
+        file: cboe-jwks.json
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+  - host: https://api.livevol.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: https://www.cboe.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        note: WAF/bot protection returns 403 for /.well-known/ paths
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /llms.txt
+        status: 404
+  - host: https://datashop.cboe.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: https://cdn.cboe.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403

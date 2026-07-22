@@ -1,0 +1,48 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Cboe Global Markets
+providerId: cboe
+created: '2026-07-22'
+modified: '2026-07-22'
+generated: '2026-07-22'
+method: searched
+tags:
+  - Rate Limiting
+  - Market Data
+description: >-
+  The Cboe LiveVol All Access API meters usage with a points system: each
+  request consumes points, and subscriptions carry a daily (trial) or monthly
+  (paid tier) points allowance. 429 is returned both when request frequency
+  exceeds rate limits and when the points allowance is exhausted. Tier 1-4
+  customers monitor consumption in the API Statistics dashboard on Cboe
+  DataShop; paid tiers can buy overage per point.
+sources:
+  - https://api.livevol.com/v1/docs/Home/ResponseCodes
+  - https://datashop.cboe.com/cboe-all-access-api
+responseCodes:
+  throttled: 429
+  pointsExhausted: 429
+limits:
+  - name: Free Trial points allowance
+    scope: subscription
+    metric: points_per_day
+    limit_count: 500
+    window: day
+  - name: Tier 3 points allowance
+    scope: subscription
+    metric: points_per_month
+    limit_count: 1250000
+    window: month
+    overage: $0.004 per point
+  - name: Tier 4 points allowance
+    scope: subscription
+    metric: points_per_month
+    limit_count: 4000000
+    window: month
+    overage: $0.0025 per point
+  - name: Request frequency limit
+    scope: subscription
+    metric: requests_per_second
+    limit_count: -1
+    notes: Frequency limits enforced (429) but numeric thresholds are not published.

@@ -1,0 +1,78 @@
+generated: '2026-07-22'
+method: searched
+source: https://id.livevol.com/.well-known/openid-configuration
+docs: https://api.livevol.com/v1/docs/Home/Authentication
+description: >-
+  OAuth scopes for the Cboe LiveVol platform, taken verbatim from the
+  scopes_supported list in the OpenID Connect discovery document published by
+  the Cboe LiveVol IdentityServer (id.livevol.com). Cboe does not publish a
+  public per-scope reference, so descriptions are only given where the scope
+  maps to a documented API product; all other scopes are listed without
+  interpretation.
+schemes:
+  - name: LiveVolOAuth2
+    source: well-known/cboe-openid-configuration.json
+    flows:
+      - flow: clientCredentials
+        tokenUrl: https://id.livevol.com/connect/token
+      - flow: authorizationCode
+        authorizationUrl: https://id.livevol.com/connect/authorize
+        tokenUrl: https://id.livevol.com/connect/token
+scopes:
+  - scope: openid
+    description: OpenID Connect authentication
+  - scope: roles
+  - scope: idmgr
+  - scope: username
+  - scope: offline_access
+    description: Request refresh tokens
+  - scope: backtester_v1
+  - scope: api_v1
+  - scope: api.theocalc.1
+  - scope: api.obverror.1
+  - scope: identity.api.1
+  - scope: gateway
+  - scope: quoteserver
+  - scope: watchlist
+  - scope: feedback
+  - scope: statistics
+  - scope: settings
+  - scope: reports
+  - scope: mail
+  - scope: api
+  - scope: api.theocalc
+  - scope: api.obverror
+  - scope: api.taq
+    description: Time and sales (TAQ) endpoints
+  - scope: api.market
+    description: Market at a Glance endpoints
+  - scope: api.backtester
+    description: Backtester API
+  - scope: api.scans.options
+    description: Option strategy scans
+  - scope: api.scans.underlying
+    description: Underlying scanner
+  - scope: control_messages
+  - scope: api.scans.custom
+    description: Custom scanner
+  - scope: trial
+    description: Free-trial access
+  - scope: api.tradeoptimizer
+    description: Trade optimizer
+  - scope: api.events
+    description: Events / earnings endpoints
+  - scope: api.smartmarket
+    description: Smart Markets API
+  - scope: etrade_api_qa
+  - scope: api.fundamentals
+  - scope: api.flexcalc
+  - scope: api.dataplus
+  - scope: api.allaccess
+    description: All Access API suite
+  - scope: api.marketref
+    description: Market reference data endpoints
+  - scope: api.datashop.vendor
+    description: DataShop vendor API
+  - scope: api.livevolman
+  - scope: livevolman
+  - scope: api.system_control

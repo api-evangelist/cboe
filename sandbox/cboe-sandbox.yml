@@ -1,0 +1,22 @@
+generated: '2026-07-22'
+method: searched
+source: https://datashop.cboe.com/cboe-all-access-api
+description: >-
+  Cboe's published path for testing the LiveVol All Access API before
+  deployment is a 14-day free trial subscription rather than a separate
+  sandbox host: trial accounts get 500 points/day against the production API
+  (credit card authorization required but not charged, no overage available),
+  and the identity service carries a dedicated "trial" OAuth scope. Usage is
+  monitored in the API Statistics dashboard on Cboe DataShop. No magic test
+  values or isolated test environment are published.
+kind: free-trial
+docs:
+  - https://datashop.cboe.com/cboe-all-access-api
+  - https://datashop.cboe.com/documentation
+modes:
+  - name: trial
+    notes: 14-day free trial; 500 points/day; production endpoints; OAuth scope "trial".
+  - name: live
+    notes: Paid Tier subscriptions via Cboe DataShop; points-based metering.
+test_values: []
+console: API Statistics dashboard on Cboe DataShop for monitoring points consumption (Tier 1-4).

@@ -1,0 +1,47 @@
+generated: '2026-07-22'
+method: derived
+status: candidate
+source: https://api.livevol.com/v1/docs/Help
+description: >-
+  No official Cboe or LiveVol MCP server was found (docs, npm, MCP
+  registries). This is a candidate tool list derived from documented Cboe
+  LiveVol All Access API endpoints — one tool per documented endpoint group
+  operation. Cboe publishes no OpenAPI, so tools reference the documentation
+  pages rather than operationIds; input schemas would need to be built from
+  the per-endpoint reference pages.
+server:
+  name: cboe-livevol
+  transport: http
+tools:
+  - name: get_all_option_trades
+    description: Current option trades across the market (Market at a Glance)
+    source_operation: GET /allaccess/market/all-option-trades
+    docs: https://api.livevol.com/v1/docs/Help
+  - name: get_option_trades_with_greeks
+    description: Historical/current option trades enriched with Greeks (Time and Sales)
+    source_operation: GET /allaccess/time-and-sales/option-trades-with-greeks
+    docs: https://api.livevol.com/v1/docs/Help
+  - name: run_custom_scanner
+    description: Run a custom market scan (Scans and Alerts)
+    source_operation: POST /allaccess/scans-and-alerts/custom-scanner
+    docs: https://api.livevol.com/v1/docs/Help
+  - name: review_trade
+    description: Trade review — parity check, implied volatility, Greeks, execution-quality benchmarks (Analytics)
+    source_operation: POST /allaccess/analytics/trade-review
+    docs: https://api.livevol.com/v1/docs/Help
+  - name: list_exchanges
+    description: Reference list of exchanges
+    source_operation: GET /allaccess/reference/exchanges
+    docs: https://api.livevol.com/v1/docs/Help/Api/GET-allaccess-reference-exchanges
+  - name: list_symbols
+    description: Reference list of symbols
+    source_operation: GET /market/symbols
+    docs: https://api.livevol.com/v1/docs/Home/Authentication
+  - name: get_delayed_quote
+    description: Public delayed quote JSON for an equity or Cboe index (unauthenticated)
+    source_operation: GET https://cdn.cboe.com/api/global/delayed_quotes/quotes/{symbol}.json
+    docs: https://www.cboe.com/delayed_quotes/
+  - name: get_delayed_option_chain
+    description: Public delayed option chain JSON for an equity or Cboe index (unauthenticated)
+    source_operation: GET https://cdn.cboe.com/api/global/delayed_quotes/options/{symbol}.json
+    docs: https://www.cboe.com/delayed_quotes/
