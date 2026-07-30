@@ -2,6 +2,19 @@ aid: cboe
 url: https://raw.githubusercontent.com/api-evangelist/cboe/refs/heads/main/apis.yml
 name: Cboe Global Markets
 type: Index
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: true
+  try_now: true
+  public: false
+  label: Freemium (free trial) · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cboe.png
 description: 'Cboe Global Markets is one of the world''s largest exchange holding
   companies, operating options, futures, equities, and FX markets including the
