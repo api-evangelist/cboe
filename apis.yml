@@ -27,7 +27,7 @@ description: 'Cboe Global Markets is one of the world''s largest exchange holdin
   delayed-quote JSON endpoints that back cboe.com quote pages.'
 created: '2026-05-05'
 modified: '2026-07-22'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 tags:
   - Market Data
   - Options
