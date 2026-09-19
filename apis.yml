@@ -42,6 +42,15 @@ specificationVersion: '0.23'
 tags:
   - Market Data
   - Options
+  - Stocks
+  - Derivatives
+  - Volatility
+  - Financial Markets
+  - Exchange
+  - Trading
+tags_raw:
+  - Market Data
+  - Options
   - Equities
   - Derivatives
   - Volatility
@@ -111,6 +120,14 @@ apis:
   - aid: cboe:cboe-livevol-all-access-api
     name: Cboe LiveVol All Access API
     tags:
+      - Options
+      - Stocks
+      - Market Data
+      - Volatility
+      - Analytics
+      - Scanners
+      - Earnings
+    tags_raw:
       - Options
       - Equities
       - Market Data
