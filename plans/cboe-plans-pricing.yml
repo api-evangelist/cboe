@@ -69,3 +69,40 @@ plans:
         limit: -1
         timeFrame: usage
         price: $0.0025 per point
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units:
+  - credit
+  plans:
+  - name: All Access API — Free Trial
+    access: trial
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods:
+    - day
+  - name: All Access API — Tier 3
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - credit
+    - other
+    periods:
+    - month
+    - per-use
+  - name: All Access API — Tier 4
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - credit
+    - other
+    periods:
+    - month
+    - per-use
