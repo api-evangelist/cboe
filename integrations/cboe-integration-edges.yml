@@ -1,0 +1,389 @@
+edges:
+- partner_name: ISO 10383 (MIC)
+  partner: null
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+  source: mic
+  category: registered trading venues and market segments
+  contract_reference:
+    register: ISO 10383 Market Identifier Codes (ISO 20022 registration authority)
+    spec_file: null
+    standard: ISO 10383
+    role: venue operator
+    matched_domain: cboe.com
+    matched_by: domain:cboe.com
+    categories:
+    - APPA
+    - ATSS
+    - MLTF
+    - NSPD
+    - RMKT
+    - SEFS
+    operating_mics:
+    - BCRM
+    - BCXE
+    - BHSF
+    - CBOE
+    - CCRM
+    - CCXE
+    - CFIM
+    - HSFX
+    - NEOE
+    - XCBO
+    mics:
+    - mic: XCBO
+      operating_mic: XCBO
+      segment: OPRT
+      market: CBOE GLOBAL MARKETS INC.
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: C2OX
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE C2 OPTIONS EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: CBOE
+      operating_mic: CBOE
+      segment: OPRT
+      market: CBOE FX NDFS
+      category: NSPD
+      legal_name: ''
+      country: CH
+    - mic: BEUP
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE - DXE PERIODIC (NL)
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: CEUD
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE - DXE DARK ORDER BOOK (NL)
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: CEUX
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE - DXE ORDER BOOKS (NL)
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: CEUO
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE - DXE OFF-BOOK (NL)
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: BATE
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - BXE ORDER BOOKS
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BATF
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - BXE OFF-BOOK
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BATD
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - BXE DARK ORDER BOOK
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BARU
+      operating_mic: CCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET DARK BOOK (NL)
+      category: RMKT
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: BEUO
+      operating_mic: CCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET OFF BOOK (NL)
+      category: RMKT
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: BEUT
+      operating_mic: CCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET INTEGRATED BOOK (NL)
+      category: RMKT
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: CCRM
+      operating_mic: CCRM
+      segment: OPRT
+      market: CBOE EUROPE REGULATED MARKETS (NL)
+      category: RMKT
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: CAPA
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE - APA (NL)
+      category: APPA
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: LISZ
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE - LIS SERVICE (NL)
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: CCXE
+      operating_mic: CCXE
+      segment: OPRT
+      market: CBOE EUROPE EQUITIES - EUROPEAN EQUITIES (NL)
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: EDGA
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE EDGA U.S. EQUITIES EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: EDGD
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE EDGA U.S. EQUITIES EXCHANGE DARK
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: EDGO
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE EDGX OPTIONS EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: EDGX
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE EDGX U.S. EQUITIES EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: BATS
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE BZX U.S. EQUITIES EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: BATY
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE BYX U.S. EQUITIES EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: BYXD
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE BYX U.S. EQUITIES EXCHANGE DARK
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: BZXD
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE BZX U.S. EQUITIES EXCHANGE DARK
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: EDDP
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE EDGX U.S. EQUITIES EXCHANGE DARK
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: BATO
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE BZX OPTIONS EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: BART
+      operating_mic: BCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET INTEGRATED BOOK
+      category: RMKT
+      legal_name: ''
+      country: GB
+    - mic: BARO
+      operating_mic: BCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET OFF BOOK
+      category: RMKT
+      legal_name: ''
+      country: GB
+    - mic: BCRM
+      operating_mic: BCRM
+      segment: OPRT
+      market: CBOE EUROPE REGULATED MARKETS
+      category: RMKT
+      legal_name: ''
+      country: GB
+    - mic: BARK
+      operating_mic: BCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET DARK BOOK
+      category: RMKT
+      legal_name: ''
+      country: GB
+    - mic: CHIO
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - CXE OFF-BOOK
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BATP
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - BXE PERIODIC
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: CHID
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - CXE DARK ORDER BOOK
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BOTC
+      operating_mic: BCXE
+      segment: SGMT
+      market: OFF EXCHANGE IDENTIFIER FOR OTC TRADES REPORTED TO CBOE EUROPE
+      category: APPA
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BCXE
+      operating_mic: BCXE
+      segment: OPRT
+      market: CBOE EUROPE EQUITIES
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: LISX
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE  EUROPE - LIS SERVICE
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: CHIX
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE - CXE ORDER BOOKS
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: BHSF
+      operating_mic: BHSF
+      segment: OPRT
+      market: CBOE SEF, LLC
+      category: SEFS
+      legal_name: CBOE SEF, LLC
+      country: US
+    - mic: HSFX
+      operating_mic: HSFX
+      segment: OPRT
+      market: CBOE FX
+      category: NSPD
+      legal_name: CBOE FX MARKETS, LLC
+      country: US
+    - mic: MATN
+      operating_mic: NEOE
+      segment: SGMT
+      market: CBOE CANADA - MATCHNOW
+      category: RMKT
+      legal_name: CBOE CANADA INC.
+      country: CA
+    - mic: CBSX
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE STOCK EXCHANGE
+      category: NSPD
+      legal_name: CBOE GLOBAL MARKETS, INC.
+      country: US
+    - mic: XCBF
+      operating_mic: XCBO
+      segment: SGMT
+      market: CBOE FUTURES EXCHANGE
+      category: NSPD
+      legal_name: ''
+      country: US
+    - mic: CFIM
+      operating_mic: CFIM
+      segment: OPRT
+      market: CBOE FIXED INCOME MARKETS, LLC
+      category: ATSS
+      legal_name: CBOE FIXED INCOME MARKETS, LLC
+      country: US
+    - mic: VWAP
+      operating_mic: CCXE
+      segment: SGMT
+      market: CBOE EUROPE EQUITIES - NL
+      category: MLTF
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    - mic: XWAP
+      operating_mic: BCXE
+      segment: SGMT
+      market: CBOE EUROPE EQUITIES - LONDON
+      category: MLTF
+      legal_name: CBOE EUROPE LIMITED
+      country: GB
+    - mic: CPRM
+      operating_mic: CCRM
+      segment: SGMT
+      market: CBOE EUROPE - REGULATED MARKET PERIODIC AUCTION (NL)
+      category: RMKT
+      legal_name: CBOE EUROPE B.V.
+      country: NL
+    detected_by: sweep-capital-markets.py
+    detected: '2026-10-15'
+  detected_by: sweep-capital-markets.py
+  first_seen: '2026-10-15'
+- partner_name: Twelve Data
+  partner: twelvedata
+  partner_match: aggregator
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: connector-coverage
+  evidence: https://api.twelvedata.com/exchanges
+  source: twelvedata
+  matched_by: mic:BCXE->domain:cboe.com
+  mic: BCXE
+  detected_by: sweep-capital-markets.py
+  first_seen: '2026-10-15'
+  other_mics:
+  - BATS
+generated: '2026-10-15'
+method: searched
+checked:
+- https://api.twelvedata.com/exchanges
+- https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
