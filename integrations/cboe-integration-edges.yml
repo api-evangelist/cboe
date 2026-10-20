@@ -364,9 +364,9 @@ edges:
       legal_name: CBOE EUROPE B.V.
       country: NL
     detected_by: sweep-capital-markets.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-capital-markets.py
-  first_seen: '2026-10-15'
+  first_seen: '2026-10-19'
 - partner_name: Twelve Data
   partner: twelvedata
   partner_match: aggregator
@@ -379,11 +379,41 @@ edges:
   matched_by: mic:BCXE->domain:cboe.com
   mic: BCXE
   detected_by: sweep-capital-markets.py
-  first_seen: '2026-10-15'
+  first_seen: '2026-10-19'
   other_mics:
   - BATS
+- partner_name: Snowflake Marketplace
+  partner: snowflake
+  partner_match: aggregator
+  type: marketplace
+  marketplace: snowflake-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://app.snowflake.com/marketplace/providers/GZTSZ37IWRT
+  category: data product listing
+  contract_reference:
+    register: Snowflake Marketplace providers (app.snowflake.com/marketplace/providers, rendered; names only, Wikidata
+      P856 identity step)
+    spec_file: null
+    role: data-marketplace-seller
+    registered_name: Cboe Global Markets
+    matched_domain: cboe.com
+    matched_by: domain
+    listings: 16
+    sample_listings: []
+    signal_note: 'participation: the provider lists data products on this marketplace; counts are context'
+    detected_by: sweep-data-marketplaces.py
+    detected: '2026-10-20'
+    identity_source: wikidata
+    identity_note: wikidata P856 cboe.com for 'Cboe Global Markets' (labelled identity step)
+  detected_by: sweep-data-marketplaces.py
+  detected: '2026-10-20'
 generated: '2026-10-15'
 method: searched
 checked:
 - https://api.twelvedata.com/exchanges
 - https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+- https://app.snowflake.com/marketplace/providers
+source:
+- https://app.snowflake.com/marketplace/providers

@@ -368,7 +368,7 @@
       legal_name: CBOE EUROPE B.V.
       country: NL
     detected_by: sweep-capital-markets.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
 - slug: cboe-twelve-data
@@ -380,5 +380,33 @@
   evidence: https://api.twelvedata.com/exchanges
   source: edge
   relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-snowflake-marketplace
+  label: Snowflake Marketplace
+  partner: snowflake
+  partner_name: Snowflake Marketplace
+  category: data product listing
+  type: marketplace
+  marketplace: snowflake-marketplace
+  channel: distribution
+  evidence: https://app.snowflake.com/marketplace/providers/GZTSZ37IWRT
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Snowflake Marketplace providers (app.snowflake.com/marketplace/providers, rendered; names only, Wikidata
+      P856 identity step)
+    spec_file: null
+    role: data-marketplace-seller
+    registered_name: Cboe Global Markets
+    matched_domain: cboe.com
+    matched_by: domain
+    listings: 16
+    sample_listings: []
+    signal_note: 'participation: the provider lists data products on this marketplace; counts are context'
+    detected_by: sweep-data-marketplaces.py
+    detected: '2026-10-20'
+    identity_source: wikidata
+    identity_note: wikidata P856 cboe.com for 'Cboe Global Markets' (labelled identity step)
   status: not-a-workflow
   arazzo: null
