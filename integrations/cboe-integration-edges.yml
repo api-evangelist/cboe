@@ -409,11 +409,343 @@ edges:
     identity_note: wikidata P856 cboe.com for 'Cboe Global Markets' (labelled identity step)
   detected_by: sweep-data-marketplaces.py
   detected: '2026-10-20'
+- partner_name: Alpha Vantage
+  partner: alpha-vantage
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: alphavantage.co
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Barchart.com, Inc.
+  partner: barchart
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: barchart.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Bloomberg
+  partner: bloomberg
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: bloomberg.com
+  matched_by: domain+name-among-holders
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Databento
+  partner: databento
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: databento.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: DTN
+  partner: dtn
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  - extranet
+  - managed_service_provider
+  matched_domain: dtn.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: dxFeed
+  partner: dxfeed
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: dxfeed.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: EODHD APIs (Unicorn Data Services SAS)
+  partner: eodhd
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: eodhd.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Exegy
+  partner: exegy
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - software
+  - managed_service_provider
+  matched_domain: exegy.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: FactSet
+  partner: factset
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: factset.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Financial Modeling Prep
+  partner: financial-modeling-prep
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  - managed_service_provider
+  matched_domain: financialmodelingprep.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: IRESS
+  partner: iress
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: iress.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: LSEG
+  partner: lseg
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: lseg.com
+  matched_by: domain+name-among-holders
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Massive.com, Inc.
+  partner: massive-com
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: massive.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Morningstar
+  partner: morningstar
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: morningstar.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: AtlasFeed powered by Options IT
+  partner: options-technology
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  - extranet
+  - managed_service_provider
+  matched_domain: options-it.com
+  matched_by: domain+alias
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: QUODD
+  partner: quodd
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  - software
+  matched_domain: quodd.com
+  matched_by: domain+name-among-holders
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Quotemedia, Inc.
+  partner: quotemedia
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: quotemedia.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Theta Data
+  partner: thetadata
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: thetadata.net
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: TradingView INC.
+  partner: tradingview
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: tradingview.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Vela
+  partner: vela-fka-sr-labs
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  - service_bureau
+  - software
+  matched_domain: tradevela.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
+- partner_name: Webull Financial
+  partner: webull
+  partner_match: domain
+  type: coverage
+  relationship: connector-coverage
+  channel: partner-built
+  direction: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  category: Cboe market data vendor
+  vendor_categories:
+  - market_data
+  matched_domain: webull.com
+  matched_by: domain
+  detected_by: sweep-private-markets-fund-admin.py
+  first_seen: '2026-10-20'
 generated: '2026-10-15'
 method: searched
 checked:
 - https://api.twelvedata.com/exchanges
 - https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
 - https://app.snowflake.com/marketplace/providers
+- https://brokercheck.finra.org/
+- https://ilpa.org/about-ilpa/member-directory/
+- https://ilpa.org/industry-guidance/templates-standards-model-documents/ilpa-templates-hub/template-endorsers/
+- https://ilpa.org/members
+- https://ilpa.org/wp-json/wp/v2/organization
+- https://www.cboe.com/market_data_services/vendors/
+- https://www.fixtrading.org/members/
+- https://www.sec.gov/foia/docs/form-adv-archive-data
 source:
 - https://app.snowflake.com/marketplace/providers

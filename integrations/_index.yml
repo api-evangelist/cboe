@@ -410,3 +410,255 @@
     identity_note: wikidata P856 cboe.com for 'Cboe Global Markets' (labelled identity step)
   status: not-a-workflow
   arazzo: null
+- slug: cboe-alpha-vantage
+  label: Alpha Vantage
+  partner: alpha-vantage
+  partner_name: Alpha Vantage
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-barchart-com-inc
+  label: Barchart.com, Inc.
+  partner: barchart
+  partner_name: Barchart.com, Inc.
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-bloomberg
+  label: Bloomberg
+  partner: bloomberg
+  partner_name: Bloomberg
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-databento
+  label: Databento
+  partner: databento
+  partner_name: Databento
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-dtn
+  label: DTN
+  partner: dtn
+  partner_name: DTN
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-dxfeed
+  label: dxFeed
+  partner: dxfeed
+  partner_name: dxFeed
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-eodhd-apis-unicorn-data-services-sas
+  label: EODHD APIs (Unicorn Data Services SAS)
+  partner: eodhd
+  partner_name: EODHD APIs (Unicorn Data Services SAS)
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-exegy
+  label: Exegy
+  partner: exegy
+  partner_name: Exegy
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-factset
+  label: FactSet
+  partner: factset
+  partner_name: FactSet
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-financial-modeling-prep
+  label: Financial Modeling Prep
+  partner: financial-modeling-prep
+  partner_name: Financial Modeling Prep
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-iress
+  label: IRESS
+  partner: iress
+  partner_name: IRESS
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-lseg
+  label: LSEG
+  partner: lseg
+  partner_name: LSEG
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-massive-com-inc
+  label: Massive.com, Inc.
+  partner: massive-com
+  partner_name: Massive.com, Inc.
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-morningstar
+  label: Morningstar
+  partner: morningstar
+  partner_name: Morningstar
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-atlasfeed-powered-by-options-it
+  label: AtlasFeed powered by Options IT
+  partner: options-technology
+  partner_name: AtlasFeed powered by Options IT
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-quodd
+  label: QUODD
+  partner: quodd
+  partner_name: QUODD
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-quotemedia-inc
+  label: Quotemedia, Inc.
+  partner: quotemedia
+  partner_name: Quotemedia, Inc.
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-theta-data
+  label: Theta Data
+  partner: thetadata
+  partner_name: Theta Data
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-tradingview-inc
+  label: TradingView INC.
+  partner: tradingview
+  partner_name: TradingView INC.
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-vela
+  label: Vela
+  partner: vela-fka-sr-labs
+  partner_name: Vela
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: cboe-webull-financial
+  label: Webull Financial
+  partner: webull
+  partner_name: Webull Financial
+  category: Cboe market data vendor
+  type: coverage
+  channel: partner-built
+  evidence: https://www.cboe.com/market_data_services/vendors/
+  source: edge
+  relationship: connector-coverage
+  status: not-a-workflow
+  arazzo: null
