@@ -1,4 +1,4 @@
-# CBOE (cboe)
+# Cboe Global Markets
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,11 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fortune 1000 company CBOE. Public API documentation has not yet been catalogued in the API Evangelist network.
+Cboe Global Markets is one of the world's largest exchange holding companies, operating options, futures, equities, and FX markets including the Cboe Options Exchange, home of the VIX Index and SPX options. Cboe offers market data programmatically through the Cboe DataShop platform and the LiveVol All Access API — a REST API suite covering real-time, delayed, and historical options and equities quotes and trades, Greeks and implied volatility analytics, earnings events, custom market scanners, and trade review — secured with OAuth 2.0 via the LiveVol identity service, plus free public delayed-quote JSON endpoints that back cboe.com quote pages.
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=cboe-api-evangelist&utm_content=repo)
+**Areas:** Market Data · Options · Stocks · Derivatives · Volatility · Financial Markets · Exchange · Trading
 
-## Timestamps
+## Cboe Global Markets on APIs.io
 
-- **Created:** 2026-05-05
-- **Modified:** 2026-05-05
+Everything profiled for Cboe Global Markets is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cboe/](https://apis.io/providers/cboe/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Cboe LiveVol All Access API](https://apis.io/apis/cboe/cboe-livevol-all-access-api/) — The Cboe LiveVol All Access API is a REST API suite offering quote and trade details for equities and options via live, delayed, and historical endpoints.…
+- [Cboe Delayed Quotes API](https://apis.io/apis/cboe/cboe-delayed-quotes-api/) — Public, unauthenticated JSON endpoints served from cdn.cboe.com that back the delayed-quote pages on cboe.com. Provide delayed quotes and full option chains…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [cboe-livevol](https://apis.io/servers/cboe/cboe-livevol/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cboe Authentication](https://apis.io/security/cboe/cboe-authentication/)
+- [Cboe Domain Security](https://apis.io/security/cboe/cboe-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Cboe Scopes](https://apis.io/scopes/cboe/cboe-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cboe Plans Pricing](https://apis.io/plans/cboe/cboe-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cboe Rate Limits](https://apis.io/rate-limits/cboe/cboe-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cboe.com/)
+- [Documentation](https://api.livevol.com/v1/docs/)
+- [Getting started](https://api.livevol.com/v1/docs/Home/Authentication)
+- [API reference](https://api.livevol.com/v1/docs/Help)
+- [Pricing](https://datashop.cboe.com/cboe-all-access-api)
+- [Sign up](https://datashop.cboe.com/register)
+- [Support](https://datashop.cboe.com/faqs)
+- [Changelog](https://datashop.cboe.com/releasenotes)
+- [Blog](https://www.cboe.com/insights/)
+- [Terms of service](https://datashop.cboe.com/data-policies)
+- [Privacy policy](https://www.cboe.com/privacy/)
+- [Status](https://www.cboe.com/system-status/)
+
+## API Evangelist rating
+
+**Kin Score 49.4** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 6.5 |
+| Contract governance | 18.2 |
+| Operational transparency | 63.2 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 76.3 |
+
+**Agent readiness 17.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 38.0** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cboe/](https://apis.io/providers/cboe/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cboe Global Markets: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cboe/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
